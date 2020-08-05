@@ -1,3 +1,3 @@
 # Quotes-Generator
-simple project to generate quotes fetched from quotes API
+simple project to generate quotes brought from (https://type.fit/api/quotes)
 
