@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+.header {
+    font-family: $text-font;
+    margin-bottom: 5rem;
+    padding: 1rem 3rem;
+
+    h3 {
+        font-weight: 300;
+
+        strong {
+            font-weight: 100px;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: $mobile) {
+    .header {
+        h3 {
+            font-size: .9rem;
+        }
+    }
+}
