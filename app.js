@@ -1,5 +1,5 @@
 /* generate button event */
-document.querySelector('button').addEventListener('click', () => {
+document.querySelector('.btn').addEventListener('click', () => {
     /* bringing the json file i did that to make the generator work smoother then before, 
     because i was fetching from website directly and i was look a bit slow */
     fetch("quotes.json")
@@ -13,10 +13,10 @@ document.querySelector('button').addEventListener('click', () => {
             let quote = data[num].text;
             let nameOfAuthor = data[num].author;
             /* using DOM to reach the paragraph sections */
-            let txt = document.querySelector('.quote');
+            let txt = document.querySelector('.card-text');
             let by = document.querySelector('.author');
             /* Finaly put data into paragraph sections */
-            txt.textContent = quote;
+            txt.textContent = `"${quote}"`;
             by.textContent = `by ${ nameOfAuthor}`;
         });
 })
